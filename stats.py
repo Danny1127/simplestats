@@ -5,3 +5,7 @@ def mean(vals):
 
 
 # print mean([2,4])
+
+
+def std(vals):
+	return 1.
