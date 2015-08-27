@@ -8,4 +8,6 @@ def mean(vals):
 
 
 def std(vals):
-	return 1.
+	if len(vals) == 0:
+		return 0.0
+	return vals[-1] / 2.

@@ -20,6 +20,29 @@ def ex_test():
 
 def test_std1():
 	obs = std([0.0,2.])
+	exp = 1.0
+	assert_equal(obs,exp)
+
+def test_std2():
+	obs = std([])
+	exp = 0.0
+	assert_equal(obs,exp)
+
+def test_std3():
+	obs = std([0.0,4.])
+	exp = 2.0
+	assert_equal(obs,exp)
+
+def test_std4():
+	obs = std([1.0,3.])
 	exp = 1.
 	assert_equal(obs,exp)
+
+
+def test_std5():
+	obs = std([1.0,1.0,1.0])
+	exp = 0.
+	assert_equal(obs,exp)
+
+
 
